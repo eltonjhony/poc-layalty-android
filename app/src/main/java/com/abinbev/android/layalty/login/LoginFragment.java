@@ -1,4 +1,4 @@
-package com.abinbev.android.layalty.Login;
+package com.abinbev.android.layalty.login;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -10,7 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.abinbev.android.layalty.BaseFragment;
-import com.abinbev.android.layalty.Main.MainActivity;
+import com.abinbev.android.layalty.main.MainActivity;
 import com.abinbev.android.layalty.R;
 import com.abinbev.android.layalty.databinding.FragmentLoginBinding;
 

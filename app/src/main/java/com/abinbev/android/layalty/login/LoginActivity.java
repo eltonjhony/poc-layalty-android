@@ -1,4 +1,4 @@
-package com.abinbev.android.layalty.Login;
+package com.abinbev.android.layalty.login;
 
 import android.os.Bundle;
 
@@ -23,7 +23,7 @@ public class LoginActivity extends BaseActivity {
 
     @Override
     public void attachFragment() {
-        getFragmentManager().beginTransaction()
+        getSupportFragmentManager().beginTransaction()
                 .add(R.id.login_container, LoginFragment.newInstance())
                 .commit();
     }

@@ -8,4 +8,21 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <!-- Login application theme. -->
+    <style name="LoginTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorGrayDark</item>
+        <item name="colorPrimaryDark">@color/colorGrayDark</item>
+        <item name="colorAccent">@color/colorWhiteLight</item>
+        <item name="selectableItemBackground">@drawable/selectable_item_transparent_background</item>
+        <item name="android:selectableItemBackground">@drawable/selectable_item_transparent_background</item>
+    </style>
+
+    <!-- Custom Login Text theme. -->
+    <style name="TextAppearence.App.TextInputLayout" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/colorWhiteLight</item>
+        <item name="colorControlNormal">@color/colorWhiteLight</item>
+        <item name="colorControlActivated">@color/colorWhiteLight</item>
+        <item name="colorAccent">@color/colorWhiteLight</item>
+    </style>
+
 </resources>

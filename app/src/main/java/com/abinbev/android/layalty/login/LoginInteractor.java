@@ -1,4 +1,4 @@
-package com.abinbev.android.layalty.Login;
+package com.abinbev.android.layalty.login;
 
 /**
  * Created by eltonjhony on 1/31/17.

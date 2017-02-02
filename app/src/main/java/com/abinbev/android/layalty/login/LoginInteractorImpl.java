@@ -1,4 +1,4 @@
-package com.abinbev.android.layalty.Login;
+package com.abinbev.android.layalty.login;
 
 import android.os.Handler;
 import android.text.TextUtils;
