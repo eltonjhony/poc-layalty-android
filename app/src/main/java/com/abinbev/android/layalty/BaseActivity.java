@@ -1,5 +1,6 @@
 package com.abinbev.android.layalty;
 
+import android.databinding.ViewDataBinding;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
@@ -17,9 +18,11 @@ public abstract class BaseActivity extends AppCompatActivity {
     public void onPostCreate(Bundle savedInstanceState) {
         super.onPostCreate(savedInstanceState);
         if (savedInstanceState == null) {
-            attachFragment();
+            attachDefaultFragment();
         }
     }
 
-    public abstract void attachFragment();
+    public abstract void attachDefaultFragment();
+
+    public abstract <T extends ViewDataBinding> T getLayout();
 }

@@ -14,7 +14,7 @@
         android:paddingLeft="@dimen/activity_horizontal_margin"
         android:paddingRight="@dimen/activity_horizontal_margin"
         android:paddingTop="@dimen/activity_vertical_margin"
-        android:background="@drawable/login1_bg"
+        android:background="@drawable/login_bg"
         tools:context="com.abinbev.android.layalty.login.LoginActivity">
 
         <ScrollView
@@ -41,11 +41,11 @@
                     android:layout_height="wrap_content"
                     app:hintTextAppearance="@style/TextAppearence.App.TextInputLayout">
 
-                        <EditText
+                        <android.support.design.widget.TextInputEditText
                             android:id="@+id/email"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:drawableLeft="@drawable/ic_account_circle"
+                            android:drawableLeft="@drawable/ic_person_white_40dp"
                             android:drawablePadding="10dp"
                             android:textColor="@color/colorWhiteLight"
                             android:hint="@string/prompt_email"
@@ -53,23 +53,22 @@
 
                 </android.support.design.widget.TextInputLayout>
 
-
                 <android.support.design.widget.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     app:hintTextAppearance="@style/TextAppearence.App.TextInputLayout">
 
-                    <EditText
+                    <android.support.design.widget.TextInputEditText
                         android:id="@+id/password"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:drawableLeft="@drawable/ic_lock_outline"
+                        android:drawableLeft="@drawable/ic_lock_outline_white_40dp"
                         android:drawablePadding="10dp"
                         android:hint="@string/prompt_password"
                         android:imeActionId="@+id/login"
                         android:imeActionLabel="@string/action_sign_in_short"
                         android:imeOptions="actionUnspecified"
-                        android:inputType="textPassword"
+                        android:inputType="numberPassword"
                         android:textColor="@color/colorWhiteLight"
                         android:maxLines="1" />
 

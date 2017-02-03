@@ -20,10 +20,10 @@ import static com.abinbev.android.layalty.R.string.error_invalid_password;
 /**
  * Created by eltonjhony on 1/31/17.
  */
-public class LoginFragment extends BaseFragment implements LoginView {
+public class LoginFragment extends BaseFragment implements LoginViewContract {
 
-    private LoginPresenter presenter;
     private FragmentLoginBinding binding;
+    private LoginPresenterContract presenter;
 
     @Nullable
     @Override
@@ -86,7 +86,7 @@ public class LoginFragment extends BaseFragment implements LoginView {
     }
 
     private void initialize() {
-        this.presenter = new LoginPresenterImpl(this);
+        this.presenter = new LoginPresenter(this);
     }
 
     private void setListeners() {

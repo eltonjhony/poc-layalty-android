@@ -1,5 +1,6 @@
 package com.abinbev.android.layalty.login;
 
+import android.databinding.ViewDataBinding;
 import android.os.Bundle;
 
 import com.abinbev.android.layalty.BaseActivity;
@@ -22,9 +23,14 @@ public class LoginActivity extends BaseActivity {
     }
 
     @Override
-    public void attachFragment() {
+    public void attachDefaultFragment() {
         getSupportFragmentManager().beginTransaction()
                 .add(R.id.login_container, LoginFragment.newInstance())
                 .commit();
+    }
+
+    @Override
+    public <T extends ViewDataBinding> T getLayout() {
+        return null;
     }
 }
